@@ -1,0 +1,14 @@
+<ul>
+    {% for post in site.posts %}
+      <li>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <!-- <p>{{ post.excerpt }}</p> -->
+      </li>
+    {% endfor %}
+</ul>
+
+<!-- To use this, add the lines below to themes that don't include posts 
+
+## Blog Posts
+
+{% include test_posts_include.html %} -->
