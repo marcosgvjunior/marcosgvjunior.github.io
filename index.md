@@ -1,162 +1,106 @@
 ---
-layout: home #default #home
-#title: "Marcos Vieira's Blog"
+layout: home
+title: Home
+body_class: home-page
 ---
 
-# About Me
+<section class="hero">
+  <img class="hero__image" src="{{ "/assets/images/background.png" | relative_url }}" alt="">
+  <div class="hero__shade"></div>
+  <div class="hero__content">
+    <p class="eyebrow">Data Science | Applied AI/ML | Software Engineering</p>
+    <h1>Marcos Vieira</h1>
+    <p class="hero__lede">
+      I build reproducible data, applied AI/ML, and software systems that turn
+      experiments into validated, documented, and decision-ready workflows.
+    </p>
+    <div class="hero__actions">
+      <a class="button button--primary" href="{{ "/case-studies/" | relative_url }}">View Case Studies</a>
+      <a class="button button--secondary" href="{{ "/research/" | relative_url }}">Research Background</a>
+    </div>
+  </div>
+</section>
 
-Hello! I'm Marcos, a highly motivated researcher, passionate about unveiling mysteries, solving puzzles, and finding patterns. My work bridges multiple disciplines, focusing on solutions in data analysis and computational simulations. Driven by challenges and motivated by problem-solving, I continually seek opportunities to expand my knowledge and skills. Thank you for visiting my GitHub profile. I invite you to explore my projects and publications. Feel free to contribute to my repositories or discuss potential collaborations.
+<section class="proof-strip" aria-label="Portfolio signals">
+  <div class="proof-strip__item">
+    <strong>Software</strong>
+    <span>Full-stack MVPs, APIs, frontend interfaces, Docker, CI/CD, tests, documentation</span>
+  </div>
+  <div class="proof-strip__item">
+    <strong>Data Science And Applied AI/ML</strong>
+    <span>Classical ML, computer vision, NLP, LLM/RAG, metrics, and model evaluation</span>
+  </div>
+  <div class="proof-strip__item">
+    <strong>Research Engineering</strong>
+    <span>scRNA-seq, stochastic modeling, sensor data, scientific computing, statistical validation</span>
+  </div>
+</section>
 
-<details>
-  <summary style="font-size: 1.5em; font-weight: bold;">Projects</summary>
+<section class="section">
+  <div class="section__header">
+    <p class="eyebrow">Selected Evidence</p>
+    <h2>Portfolio Work</h2>
+    <p>
+      The portfolio is organized around evidence: shipped software, reproducible
+      data and ML workflows, peer-reviewed research engineering, scientific
+      computing, and technical writing that explains decisions and limitations.
+    </p>
+  </div>
 
-<details>
-  <summary style="font-size: 1.2em; font-weight: bold;">Current Research Projects</summary>
-  <div markdown="1">
+  <div class="case-grid">
+    {%- assign featured_cases = site.data.case_studies | where: "featured", true -%}
+    {%- for item in featured_cases -%}
+      {%- include case-card.html item=item -%}
+    {%- endfor -%}
+  </div>
+</section>
 
-- **Integrating scRNA-seq Data into a Gene Regulatory Network Dynamics Model**
-  - Tools: R, Wolfram Mathematica, Python
-  - Focus: Glioblastoma Multiforme, GRN dynamics, dimensionality reduction, clustering, stochastic modeling, and time series.
-  - **Articles:**
-    - Junior, M.G.V.; Côrtes, A.M.d.A.; Carneiro, F.R.G.; Carels, N.; Silva, F.A.B.d. A method for in silico exploration of potential Glioblastoma Multiforme attractors using single-cell RNA sequencing. *Under peer review at Scientific Reports*. [(repo)](https://github.com/marcosgvjunior/Biomarker-Guided-scRNA-Seq-Cancer-Attractor-Analysis)
-    - Junior, M.G.V.; Côrtes, A.M.d.A.; Carneiro, F.R.G.; Carels, N.; Silva, F.A.B.d. Unveiling the Dynamics behind Glioblastoma Multiforme Single-Cell Data Heterogeneity. *Int. J. Mol. Sci.* 2024, 25, 4894. [https://doi.org/10.3390/ijms25094894](https://doi.org/10.3390/ijms25094894)
-    - Carels, N.; Sgariglia, D.; Junior, M.G.V.; Lima, C.R.; Carneiro, F.R.G.; Silva, G.F.d.; Silva, F.A.B.d.; Scardini, R.; Tuszynski, J.A.; Andrade, C.V.d.; et al. A Strategy Utilizing Protein–Protein Interaction Hubs for the Treatment of Cancer Diseases. *Int. J. Mol. Sci.* 2023, 24, 16098. [https://doi.org/10.3390/ijms242216098](https://doi.org/10.3390/ijms242216098)
-  - **Code Repositories:**
-    - [Gene Expression Network Analysis](https://github.com/marcosgvjunior/gene-expression-network-analysis)
-    - [Biomarker-Guided scRNA-Seq Cancer Attractor Analysis](https://github.com/marcosgvjunior/Biomarker-Guided-scRNA-Seq-Cancer-Attractor-Analysis)
-    - [scRNA-seq-Integrated-Cancer-Attractor-Analysis-using-Python](https://github.com/marcosgvjunior/scRNA-seq-Integrated-Cancer-Attractor-Analysis-using-Python)
-    - [graph-matrix-and-combinatorics](https://github.com/marcosgvjunior/graph-matrix-and-combinatorics)
+<section class="section section--split">
+  <div>
+    <p class="eyebrow">Positioning</p>
+    <h2>From Research To Delivery</h2>
+  </div>
+  <div class="split-copy">
+    <p>
+      My background connects applied physics, computational biology, scientific
+      software, and practical data/AI workflows. The portfolio is designed for
+      software, applied AI/ML, data science, analytics, and data engineering
+      roles where evaluation, reproducibility, technical communication, and
+      handoff-ready code matter.
+    </p>
+    <p>
+      Formless Solutions extends this work into an emerging consulting studio
+      focused on applied AI, data and software systems, strategy, and decision
+      workflows for complex problems.
+    </p>
+  </div>
+</section>
 
-</div>
-</details>
-
-<details>
-  <summary style="font-size: 1.2em; font-weight: bold;">Past Research Projects</summary>
-  <div markdown="1">
-
-- **Determining Photon Beam Energy Spectra for Radiotherapy Using a Pixel Detector**
-  - Tools: Geant4/C++, ROOT library
-  - Focus: Reconstruction of the spectrum of a clinical linear accelerator (Clinac), energy calibration, data visualization.
-
-  - **Works/Articles:**
-    - Vieira, M. G.; Marinho, F.; Amato, S.; Polycarpo, E. Estudo De Viabilidade De determinação De Espectros De Energia De Feixes De fótons Para Radioterapia Usando Um Detector De Pixels. *Rev Bras Fis Med* 2018, 12, 21-25. [https://doi.org/10.29384/rbfm.2018.v12.n3.p21-25](https://doi.org/10.29384/rbfm.2018.v12.n3.p21-25)
-    - [Master's Dissertation](https://www.if.ufrj.br/wp-content/uploads/2020/11/Dissertacao_Marcos_Vieira_IF_FisAplic_UFRJ_final_ficha.pdf).
-    - [Bachelor's Thesis](https://pantheon.ufrj.br/bitstream/11422/5757/1/TCC_Marcos_Vieira_IF-FISMED.pdf).
-
-  - **Code Repositories:**
-    - [Percentage Depth Dose Algorithm](https://github.com/marcosgvjunior/Percentage-Depth-Dose-Algorithm)
-    - [Clustering Code for Pixel Detectors](https://github.com/marcosgvjunior/clustering-code-for-pixel-detectors)
-    - [ROOT-multi-files-analysis](https://github.com/marcosgvjunior/ROOT-multi-files-analysis)
-    - [Bash-Scripts](https://github.com/marcosgvjunior/Bash-Scripts)
-
-</div>
-</details>
-
-<details>
-  <summary style="font-size: 1.2em; font-weight: bold;">Repositories for Extra Projects</summary>
-  <div markdown="1">
-
-- [ML-project_UERJ-course](https://github.com/marcosgvjunior/ML-project_UERJ-course)
-- [accelerometerJM](https://github.com/marcosgvjunior/accelerometerJM)
-
-</div>
-</details>
-
-<details>
-  <summary style="font-size: 1.2em; font-weight: bold;">Repositories for Educational Projects</summary>
-  <div markdown="1">
-
-- [Bidimensional First-Order Dynamical Systems](https://github.com/marcosgvjunior/Bidimensional-FirstOrder-Dynamical-Systems)
-- [Interpolation Methods Overview](https://github.com/marcosgvjunior/Interpolation-Methods-Overview)
-- [Stochastic Processes: A Heuristic Approach](https://github.com/marcosgvjunior/Stochastic-Processes-A-Heuristic-Approach)
-
-</div>
-</details>
-
-</details>
-
-<details>
-  <summary style="font-size: 1.5em; font-weight: bold;">Skills</summary>
-  <div markdown="1">
-
-- **Programming Languages:** R, Python, C/C++, bash script, Shell, Linux, SQL
-- **Libraries/Frameworks (Python):** NumPy, Pandas, Scikit-learn, PyTorch, XGBoost, SciPy, SymPy, ...
-- **Libraries/Frameworks (R):** Tidyverse, Bioconductor, Seurat, limma, ...
-- **Libraries/Frameworks (C++):** ROOT (Data Analysis Framework)
-- **Tools:** Google Colab, Wolfram Mathematica, Git, GitHub, Power BI
-- **Techniques:** Statistical analysis, algebra, mathematical modeling, stochastic simulation, time series analysis, machine learning, dimensionality reduction, clustering, logistic regression, predictive analytics, software testing, database design
-
-</div>
-</details>
-
-<details>
-  <summary style="font-size: 1.5em; font-weight: bold;">Courses/Certifications</summary>
-  <div markdown="1">
-
-### Machine Learning & Data Science
-
-- **Machine Learning for Time Series Data in Python** - DataCamp (Issued May 2024)
-- **Cluster Analysis in Python** - DataCamp (Issued Apr 2024)
-- **Feature Engineering for Machine Learning in Python** - DataCamp (Issued Apr 2024)
-- **Preprocessing for Machine Learning in Python** - DataCamp (Issued Apr 2024)
-- **Dimensionality Reduction in Python** - DataCamp (Issued Mar 2024)
-- **Extreme Gradient Boosting with XGBoost** - DataCamp (Issued Mar 2024)
-- **Linear Classifiers in Python** - DataCamp (Issued Mar 2024)
-- **Machine Learning with Tree-Based Models in Python** - DataCamp (Issued Mar 2024)
-- **Unsupervised Learning in Python** - DataCamp (Issued Mar 2024)
-- **Supervised Learning with scikit-learn** - DataCamp (Issued Dec 2023)
-- **Introduction to Predictive Analytics in Python** - DataCamp (Issued Mar 2023)
-- **Intermediate Deep Learning with PyTorch** - DataCamp (Issued Dec 2023)
-- **Introduction to Deep Learning with PyTorch** - DataCamp (Issued Nov 2023)
-
-### Programming & Software Engineering
-
-- **Object-Oriented Programming in Python** - DataCamp (Issued Mar 2024)
-- **Software Engineering Principles in Python** - DataCamp (Issued Mar 2024)
-- **Unit Testing for Data Science in Python** - DataCamp (Issued Mar 2024)
-- **Introduction to Testing in Python** - DataCamp (Issued Mar 2024)
-- **Writing Efficient Code with pandas** - DataCamp (Issued Mar 2024)
-- **Writing Efficient Python Code** - DataCamp (Issued Mar 2024)
-- **Writing Functions in Python** - DataCamp (Issued Mar 2024)
-- **Python Data Science Toolbox (Part 2)** - DataCamp (Issued Dec 2023)
-- **Python Data Science Toolbox (Part 1)** - DataCamp (Issued Nov 2023)
-
-### Data Manipulation & Analysis
-
-- **Reshaping Data with pandas** - DataCamp (Issued Mar 2024)
-- **Data Manipulation with pandas** - DataCamp (Issued Aug 2023)
-- **Joining Data with pandas** - DataCamp (Issued Aug 2023)
-
-### Databases & SQL
-
-- **Database Design** - DataCamp (Issued Apr 2024)
-- **Introduction to Relational Databases in SQL** - DataCamp (Issued Apr 2024)
-- **Introduction to SQL** - DataCamp (Issued Nov 2023)
-
-### Specialized Topics
-
-- **Analyzing IoT Data in Python** - DataCamp (Issued Feb 2024)
-- **Streaming Concepts** - DataCamp (Issued Feb 2024)
-- **MLOps Concepts** - DataCamp (Issued Jan 2024)
-- **Introduction to Power BI** - DataCamp (Issued Nov 2023)
-
-### Bioinformatics
-
-- **Differential Expression Analysis with limma in R** - DataCamp (Issued Feb 2021)
-- **RNA-Seq with Bioconductor in R** - DataCamp (Issued Feb 2021)
-- **Single-Cell RNA-Seq with Bioconductor in R** - DataCamp (Issued Feb 2021)
-
-</div>
-</details>
-
-<details>
-<summary style="font-size: 1.5em; font-weight: bold;">Contact</summary>
-
-
-<div style="display: flex; justify-content: space-between;">
-  <a href="https://www.linkedin.com/in/marcos-v-a86095208/"><img src="https://img.shields.io/badge/LinkedIn-marcos--v--a86095208-blue" alt="LinkedIn"></a>
-  <a href="https://orcid.org/0009-0004-1373-0720"><img src="https://img.shields.io/badge/ORCID-0009--0004--1373--0720-lightgreen" alt="ORCID"></a>
-  <a href="http://lattes.cnpq.br/3127406137727396"><img src="https://img.shields.io/badge/Lattes-3127406137727396-lightgrey" alt="Lattes"></a>
-</div>
-
-</details>
+<section class="section section--contrast">
+  <div class="section__header">
+    <p class="eyebrow">Applied AI/ML Focus</p>
+    <h2>Current Case-Study Directions</h2>
+    <p>
+      The active AI/ML portfolio track focuses on practical workflows that make
+      model behavior visible: calibration, text intelligence, retrieval quality,
+      evidence grounding, and business-facing interpretation.
+    </p>
+  </div>
+  <div class="pipeline-grid">
+    <article>
+      <span>Computer Vision</span>
+      <h3>Face Recognition Calibration</h3>
+      <p>Thresholds, FAR/FRR, open-set limits, and why calibration is not liveness detection.</p>
+    </article>
+    <article>
+      <span>NLP And Analytics</span>
+      <h3>Complaint Intelligence</h3>
+      <p>Text signals, sentiment limits, aspect cues, and operational triage over public complaint data.</p>
+    </article>
+    <article>
+      <span>LLM/RAG</span>
+      <h3>Contract RAG Evaluation</h3>
+      <p>Citations, abstention, retrieval quality, and auditable document intelligence.</p>
+    </article>
+  </div>
+</section>

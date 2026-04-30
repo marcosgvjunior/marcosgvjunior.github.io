@@ -1,13 +1,17 @@
 ---
 layout: default
 ---
-<article class="post">
+<article class="content-page">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+  <header class="page-hero page-hero--compact">
+    <div class="container">
+      {%- if page.kicker -%}<p class="eyebrow">{{ page.kicker }}</p>{%- endif -%}
+      <h1>{{ page.title | escape }}</h1>
+      {%- if page.description -%}<p class="page-description">{{ page.description }}</p>{%- endif -%}
+    </div>
   </header>
 
-  <div class="post-content">
+  <div class="container prose">
     {{ content }}
   </div>
 
