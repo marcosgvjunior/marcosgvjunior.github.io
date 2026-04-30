@@ -1,8 +1,31 @@
-title: Marcos Vieira's Blog
-description: This GitHub repository is a professional resume and a portfolio. It presents my professional information and posts sharing insights on various topics related to my studies and projects.
-theme: minima
-#theme: jekyll-theme-time-machine
+title: Marcos Vieira
+tagline: Applied AI, Data, And Software Systems
+description: End-to-end data and software systems across applied AI/ML, analytics, automation, software engineering, data engineering, and research engineering.
+url: "https://marcosgvjunior.github.io"
+baseurl: ""
+lang: en
 author: Marcos Vieira
 markdown: kramdown
 kramdown:
   input: GFM
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+permalink: pretty
+github_username: marcosgvjunior
+linkedin_username: marcos-v-a86095208
+orcid_username: 0009-0004-1373-0720
+lattes_url: "http://lattes.cnpq.br/3127406137727396"
+formless_url: "https://www.formlesssolutions.com/"
+exclude:
+  - .dockerignore
+  - .gitignore
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - assets/README.md
+  - docker-compose.yml
+  - docs/
+  - guidelines/

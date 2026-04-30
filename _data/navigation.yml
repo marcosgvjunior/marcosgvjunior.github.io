@@ -1,0 +1,10 @@
+- label: Home
+  url: /
+- label: Case Studies
+  url: /case-studies/
+- label: Research
+  url: /research/
+- label: Writing
+  url: /writing/
+- label: About / Contact
+  url: /about/

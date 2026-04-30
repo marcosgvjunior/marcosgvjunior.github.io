@@ -1,0 +1,95 @@
+- slug: taverns-ledger
+  title: "The Tavern's Ledger"
+  track: Software Engineering
+  status: Public MVP
+  featured: true
+  image: /assets/images/background.png
+  summary: A full-stack cataloging system that demonstrates API design, a dynamic SPA frontend, Docker, tests, CI/CD, and design-first documentation.
+  signals:
+    - RESTful Flask backend and vanilla JavaScript SPA frontend.
+    - API configuration used as a single source of truth for frontend behavior.
+    - Documentation, tests, Docker, and CI/CD treated as part of delivery.
+  links:
+    - label: Backend
+      url: https://github.com/marcosgvjunior/the-taverns-ledger-backend
+    - label: Frontend
+      url: https://github.com/marcosgvjunior/the-taverns-ledger-frontend
+
+- slug: operational-ai-field-notes
+  title: Operational AI Field Notes
+  track: Data Science / Applied AI/ML
+  status: Active track
+  featured: true
+  image: /assets/images/case-studies/technical-field-notes.png
+  summary: Reproducible applied AI experiments and technical write-ups focused on model behavior, evaluation, service boundaries, and operational contracts.
+  signals:
+    - Classical ML, computer vision, NLP, and LLM/RAG experiments.
+    - Notebook-to-service refactors with tests and explicit evaluation boundaries.
+    - Focus areas include calibration, text intelligence, retrieval evaluation, and operational decision workflows.
+  links:
+    - label: Repository
+      url: https://github.com/marcosgvjunior/operational-ai-field-notes
+
+- slug: gbm-scrna-seq
+  title: GBM scRNA-seq Attractor Analysis
+  track: Research Engineering
+  status: Peer-reviewed
+  featured: true
+  image: /assets/images/case-studies/lncc-rag-postdoctoral-work.png
+  summary: Open-source research engineering around single-cell RNA sequencing, dimensionality reduction, clustering validation, and stability-oriented gene regulatory network analysis.
+  signals:
+    - First-author Scientific Reports paper and related IJMS publications.
+    - High-dimensional biological data workflows with statistical validation.
+    - Bridges computational biology, scientific software, and public research artifacts.
+  links:
+    - label: Repository
+      url: https://github.com/marcosgvjunior/Biomarker-Guided-scRNA-Seq-Cancer-Attractor-Analysis
+    - label: Scientific Reports
+      url: https://www.nature.com/articles/s41598-024-74985-2
+
+- slug: timepix-reconstruction
+  title: Timepix Pixel-Detector Pipelines
+  track: Scientific Computing
+  status: Published research
+  featured: true
+  image: /assets/images/case-studies/master-applied-physics.png
+  summary: Sensor-data workflows for radiotherapy photon-beam spectrum reconstruction, including calibration, simulation, event reconstruction, and uncertainty-aware validation.
+  signals:
+    - Pixel-level data processing and custom C++/ROOT algorithms.
+    - Simulation, inverse-problem reasoning, curve fitting, and chi-square validation.
+    - Strong foundation for data analysis, scientific computing, and uncertainty handling.
+  links:
+    - label: Repository
+      url: https://github.com/marcosgvjunior/clustering-code-for-pixel-detectors
+    - label: Publication
+      url: https://doi.org/10.29384/rbfm.2018.v12.n3.p21-25
+
+- slug: formless-solutions
+  title: Formless Solutions
+  track: Consulting / Studio
+  status: Emerging studio
+  featured: false
+  image: /assets/images/case-studies/formless-solutions-banner.png
+  summary: An emerging consulting studio for applied AI, data and software systems, strategy, and decision workflows.
+  signals:
+    - Connects technical experiments to decision clarity and systems thinking.
+    - Focuses on complex problems that benefit from data, AI, software, and strategic framing.
+    - Provides a professional container for future consulting artifacts and selected public case studies.
+  links:
+    - label: Website
+      url: https://www.formlesssolutions.com/
+
+- slug: object-detection-contracts
+  title: Object Detection Contracts
+  track: Computer Vision
+  status: Methods track
+  featured: false
+  image: /assets/images/case-studies/object-detection-contract.png
+  summary: A computer-vision case direction about model-output contracts, thresholding, non-maximum suppression, and framework-agnostic adapters.
+  signals:
+    - Useful for explaining why model output needs service boundaries.
+    - Stronger as a comparison bundle across multiple detection frameworks.
+    - Supports computer-vision case-study pages focused on practical model behavior and delivery boundaries.
+  links:
+    - label: Field-note track
+      url: https://github.com/marcosgvjunior/operational-ai-field-notes

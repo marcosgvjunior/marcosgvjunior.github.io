@@ -1,0 +1,35 @@
+education:
+  - title: Software Engineering Specialization
+    institution: PUC-Rio CCEC
+    period: 2025-present
+  - title: Ph.D. in Computational and Systems Biology
+    institution: Oswaldo Cruz Institute, Fiocruz
+    period: 2020-2024
+  - title: M.Sc. in Interdisciplinary Applied Physics
+    institution: Federal University of Rio de Janeiro
+    period: 2018-2020
+  - title: B.Sc. in Medical Physics
+    institution: Federal University of Rio de Janeiro
+    period: 2018
+
+awards:
+  - title: Oswaldo Cruz Institute Annual Thesis Prize
+    detail: Alexandre Peixoto Award, 2025
+
+publications:
+  - title: A method for in silico exploration of potential Glioblastoma Multiforme attractors using single-cell RNA sequencing
+    venue: Scientific Reports
+    year: 2024
+    url: https://www.nature.com/articles/s41598-024-74985-2
+  - title: Unveiling the Dynamics behind Glioblastoma Multiforme Single-Cell Data Heterogeneity
+    venue: International Journal of Molecular Sciences
+    year: 2024
+    url: https://doi.org/10.3390/ijms25094894
+  - title: A Strategy Utilizing Protein-Protein Interaction Hubs for the Treatment of Cancer Diseases
+    venue: International Journal of Molecular Sciences
+    year: 2023
+    url: https://doi.org/10.3390/ijms242216098
+  - title: Estudo de viabilidade de determinacao de espectros de energia de feixes de fotons para radioterapia usando um detector de pixels
+    venue: Revista Brasileira de Fisica Medica
+    year: 2018
+    url: https://doi.org/10.29384/rbfm.2018.v12.n3.p21-25

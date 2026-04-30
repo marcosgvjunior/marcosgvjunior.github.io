@@ -1,0 +1,30 @@
+- title: Technical Field Notes On AI Systems
+  status: Active portfolio lane
+  summary: Short-form writing about model contracts, failure modes, evaluation boundaries, and practical data science and AI/ML workflows.
+  evidence:
+    - Computer vision contract posts.
+    - NLP, ML, and LLM/RAG case-study directions.
+    - Operational AI Field Notes repository.
+
+- title: Research-To-Industry Mapping
+  status: Published writing lane
+  summary: Posts that translate applied physics, computational biology, and postdoctoral LLM/RAG work into data science, AI/ML, research engineering, and software role signals.
+  evidence:
+    - Applied physics to data roles.
+    - LNCC LLM/RAG postdoctoral work.
+    - LinkedIn profile summary archive.
+
+- title: Narrative AI And Systems Thinking
+  status: Conceptual lane
+  summary: Public reflections about narrative, systems thinking, semiotics, and AI as a bridge toward Formless Solutions.
+  evidence:
+    - Narrative AI public posts.
+    - Formless Solutions project log.
+    - Systems-thinking essays.
+
+- title: Secure AI Workflow Practice
+  status: Supporting lane
+  summary: Writing about secure development habits, isolated environments, and practical risk awareness around AI tools.
+  evidence:
+    - VM isolation and AI-tool safety posts.
+    - Docker-based reproducibility in public projects.
