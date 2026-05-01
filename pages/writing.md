@@ -21,12 +21,16 @@ permalink: /writing/
   {%- endfor -%}
 </div>
 
-## Writing Focus
-
-The writing track translates technical work into clear professional evidence:
-what problem was addressed, what artifact was built, which metric or contract
-matters, and what the result does or does not prove.
-
-This supports recruiters, technical peers, collaborators, and potential clients
-who need to understand both the engineering work and the decision logic behind
-it.
+<section class="prose-card">
+  <h2>Writing Focus</h2>
+  <p>
+    The writing track translates technical work into clear professional
+    evidence: what problem was addressed, what artifact was built, which metric
+    or contract matters, and what the result does or does not prove.
+  </p>
+  <p>
+    This supports recruiters, technical peers, collaborators, and potential
+    clients who need to understand both the engineering work and the decision
+    logic behind it.
+  </p>
+</section>
