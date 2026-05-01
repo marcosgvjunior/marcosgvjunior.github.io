@@ -79,7 +79,7 @@ body_class: home-page
 <section class="section section--contrast">
   <div class="section__header">
     <p class="eyebrow">Applied AI/ML Focus</p>
-    <h2>Current Case-Study Directions</h2>
+    <h2>Current Case Study Directions</h2>
     <p>
       The active AI/ML portfolio track focuses on practical workflows that make
       model behavior visible: calibration, text intelligence, retrieval quality,
