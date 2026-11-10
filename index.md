@@ -5,8 +5,8 @@ body_class: home-page
 ---
 
 <section class="hero">
-  <img class="hero__image" src="{{ "/assets/images/background.png" | relative_url }}" alt="">
-  <div class="hero__shade"></div>
+  <img class="hero__image" src="{{ "/assets/images/formless-echo-hero.webp" | relative_url }}" width="1672" height="941" alt="" fetchpriority="high">
+  <div class="hero__shade" aria-hidden="true"></div>
   <div class="hero__content">
     <p class="eyebrow">Data Science | Applied AI/ML | Software Engineering</p>
     <h1>Marcos Vieira</h1>

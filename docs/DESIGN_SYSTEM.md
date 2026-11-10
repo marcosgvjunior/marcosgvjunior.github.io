@@ -32,9 +32,21 @@ Images reveal the work or the portfolio signal:
 - diagrams or generated visuals tied to a specific case study;
 - research visuals with clear source rights and context.
 
-The current home image is a transitional hero asset. It is more atmospheric
-than evidentiary, so a future visual pass will replace it with a custom system
-map or real project screenshots.
+The home hero uses `assets/images/formless-echo-hero.webp`, a purpose-made
+illustration connecting the portfolio to Formless Solutions. T-echo Wings and
+F-echo Solutions appear with voice, data, and security symbols. It is a brand
+illustration, not a product screenshot or evidence of deployed capabilities.
+
+The composition is open, centered, and visually balanced: the studio's central
+axis and holographic table sit between T-echo Wings and F-echo Solutions.
+The existing page layout, centered image crop, and text overlay are preserved.
+The image is decorative (`alt=""`), has explicit intrinsic dimensions, and is
+prioritized as an above-the-fold asset. The original background asset is
+retained for an easy rollback.
+
+The Tavern's Ledger card uses `assets/images/case-studies/taverns-ledger.webp`,
+a thematic illustration of a tavern inventory ledger. It reflects the RPG
+cataloging concept, rather than pretending to show the application interface.
 
 ## Components
 
@@ -46,7 +58,7 @@ map or real project screenshots.
 
 ## Next Improvements
 
-- Replace the hero image with a purpose-built portfolio visual.
+- Keep the hero composition and text contrast checked at desktop and mobile widths.
 - Add screenshots for The Tavern's Ledger backend/frontend.
 - Add case-study pages with diagrams for computer vision calibration, complaint
   intelligence, and RAG evaluation.
