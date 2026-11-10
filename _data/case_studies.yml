@@ -3,7 +3,7 @@
   track: Software Engineering
   status: Public MVP
   featured: true
-  image: /assets/images/background.png
+  image: /assets/images/case-studies/taverns-ledger.webp
   summary: A full-stack cataloging system that demonstrates API design, a dynamic SPA frontend, Docker, tests, CI/CD, and design-first documentation.
   signals:
     - RESTful Flask backend and vanilla JavaScript SPA frontend.
